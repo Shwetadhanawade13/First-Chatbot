@@ -16,6 +16,6 @@ while True:
     if prompt=="Exit":
         break
     
-    response=llm.invoke(prompt)
+    response=llm.invoke(history)
     history.append(response)
     print(response.content)
